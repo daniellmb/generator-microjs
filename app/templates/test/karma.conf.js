@@ -12,21 +12,6 @@
 
 module.exports = function (config) {
   config.set({
-
-    /*
-     The root path location that will be used to resolve all relative paths defined in files and exclude
-     */
-    basePath: '../',
-
-    /*
-     The files array determines which files are included in the browser and served by Karma.
-     */
-    files: [
-
-      // equal to {pattern: 'test/unit/*.spec.js', watched: true, served: true, included: true}
-      'test/spec/*.spec.js'
-    ],
-
     /*
      Test results reporter to use:
      dots, progress, nyan, story
@@ -61,6 +46,10 @@ module.exports = function (config) {
 
     // If browser does not capture in given timeout [ms], kill it
     // Increase timeout in case connection in CI is slow
-    captureTimeout: 100000
+    captureTimeout: 100000,
+
+    // logging level
+    // LOG_DISABLE, LOG_ERROR, LOG_WARN, LOG_INFO, LOG_DEBUG
+    logLevel: 'LOG_INFO'
   });
 };

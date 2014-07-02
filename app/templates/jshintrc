@@ -28,7 +28,8 @@
     "suite": false,
     "test": false,
     "setup": false,
-    "teardown": false<% } %><% if (testFramework === 'jasmine') { %>
+    "teardown": false,
+    "expect": false<% } %><% if (testFramework === 'jasmine') { %>
     "describe": false,
     "it": false,
     "beforeEach": false,

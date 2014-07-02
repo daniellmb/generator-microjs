@@ -18,7 +18,10 @@ var gulp = require('gulp'),
     karma = require('gulp-karma');
 
 gulp.task('default', function () {
-  return gulp.src('<%= baseFileName %>.js')
+  return gulp.src([
+      '<%= baseFileName %>.js',
+      'test/spec/*.spec.js'
+    ])
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(jshint.reporter('fail'))
@@ -28,8 +31,7 @@ gulp.task('default', function () {
       maintainability: [100]
     }))
     .pipe(karma({
-      configFile: './test/karma.conf.js',
-      action: 'run'
+      configFile: 'test/karma.conf.js'
     }))
     .pipe(rename('<%= baseFileName %>.min.js'))
     .pipe(uglify({

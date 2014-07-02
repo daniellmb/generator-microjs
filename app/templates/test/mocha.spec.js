@@ -9,6 +9,7 @@
  * @author <%= realname %> <<%= email %>>
  */
 'use strict';
+/*jshint -W030 */
 
 describe('<%= projName %>', function () {
   beforeEach(function () {

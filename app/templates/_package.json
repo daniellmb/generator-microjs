@@ -1,7 +1,7 @@
 {
   "name": "<%= projName %>",
   "version": "0.0.1",
-  "description": "Micro-library created by generator-microjs.",
+  "description": "<%= projName %> was created by generator-microjs.",
   "homepage": "https://github.com/<%= githubUser %>/<%= projName %>",
   "author": {
     "name": "<%= realname %>",
