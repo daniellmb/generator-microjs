@@ -49,7 +49,7 @@ module.exports = function (config) {
     captureTimeout: 100000,
 
     // logging level
-    // LOG_DISABLE, LOG_ERROR, LOG_WARN, LOG_INFO, LOG_DEBUG
-    logLevel: 'LOG_INFO'
+    // DISABLE, ERROR, WARN, INFO, DEBUG
+    logLevel: 'DEBUG'
   });
 };
