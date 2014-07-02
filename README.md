@@ -103,7 +103,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [irc-image]: http://img.shields.io/badge/irc-%23microjs-brightgreen.png
 
 [gitter-url]: https://gitter.im/daniellmb/generator-microjs
-[gitter-image]: http://img.shields.io/badge/gitter-daniellmb/generator-microjs-brightgreen.png
+[gitter-image]: http://img.shields.io/badge/gitter-daniellmb/generator--microjs-brightgreen.png
 
 [tip-url]: https://www.gittip.com/daniellmb
 [tip-image]: http://img.shields.io/gittip/daniellmb.png
