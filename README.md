@@ -28,7 +28,6 @@ Quickly scaffold out a micro library or framework.
       * Travis Build Status: [![Build Status][build-image]][build-url]
       * Code Quality GPA: [![Code GPA][gpa-image]][gpa-url]
       * Dependency Status: [![Dependency Status][depstat-image]][depstat-url]
-      * Repo Issues: [![Repo Issues][issues-image]][issues-url]
       * NPM Version: [![NPM Version][npm-image]][npm-url]
       * NPM Downloads: [![NPM Downloads][downloads-image]][downloads-url]
       * IRC Channel: [![IRC Channel][irc-image]][irc-url]
