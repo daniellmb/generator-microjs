@@ -59,34 +59,34 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 [build-url]: https://travis-ci.org/<%= githubUser %>/<%= projName %>
-[build-image]: http://img.shields.io/travis/<%= githubUser %>/<%= projName %>.svg
+[build-image]: http://img.shields.io/travis/<%= githubUser %>/<%= projName %>.png
 
 [gpa-url]: https://codeclimate.com/github/<%= githubUser %>/<%= projName %>
-[gpa-image]: http://img.shields.io/codeclimate/github/<%= githubUser %>/<%= projName %>.svg
+[gpa-image]: http://img.shields.io/codeclimate/github/<%= githubUser %>/<%= projName %>.png
 
 [coverage-url]: https://codeclimate.com/github/<%= githubUser %>/<%= projName %>/code?sort=covered_percent&sort_direction=desc
-[coverage-image]: http://img.shields.io/codeclimate/coverage/github/<%= githubUser %>/<%= projName %>.svg
+[coverage-image]: http://img.shields.io/codeclimate/coverage/github/<%= githubUser %>/<%= projName %>.png
 
 [depstat-url]: https://david-dm.org/<%= githubUser %>/<%= projName %>
 [depstat-image]: https://david-dm.org/<%= githubUser %>/<%= projName %>.png?theme=shields.io
 
 [issues-url]: https://github.com/<%= githubUser %>/<%= projName %>/issues
-[issues-image]: http://img.shields.io/github/issues/<%= githubUser %>/<%= projName %>.svg
+[issues-image]: http://img.shields.io/github/issues/<%= githubUser %>/<%= projName %>.png
 
 [bower-url]: http://bower.io/search/?q=<%= projName %>
 [bower-image]: https://badge.fury.io/bo/<%= projName %>.png
 
 [downloads-url]: https://www.npmjs.org/package/<%= projName %>
-[downloads-image]: http://img.shields.io/npm/dm/<%= projName %>.svg
+[downloads-image]: http://img.shields.io/npm/dm/<%= projName %>.png
 
 [npm-url]: https://www.npmjs.org/package/<%= projName %>
 [npm-image]: https://badge.fury.io/js/<%= projName %>.png
 
 [irc-url]: http://webchat.freenode.net/?channels=<%= projName %>
-[irc-image]: http://img.shields.io/badge/irc-%23microseed-brightgreen.svg
+[irc-image]: http://img.shields.io/badge/irc-%23microseed-brightgreen.png
 
 [gitter-url]: https://gitter.im/<%= githubUser %>/<%= projName %>
-[gitter-image]: http://img.shields.io/badge/gitter-<%= githubUser %>/<%= projName %>-brightgreen.svg
+[gitter-image]: http://img.shields.io/badge/gitter-<%= githubUser %>/<%= projName %>-brightgreen.png
 
 [tip-url]: https://www.gittip.com/<%= githubUser %>
-[tip-image]: http://img.shields.io/gittip/<%= githubUser %>.svg
+[tip-image]: http://img.shields.io/gittip/<%= githubUser %>.png

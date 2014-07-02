@@ -79,31 +79,31 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [build-url]: https://travis-ci.org/daniellmb/generator-microjs
-[build-image]: http://img.shields.io/travis/daniellmb/generator-microjs.svg
+[build-image]: http://img.shields.io/travis/daniellmb/generator-microjs.png
 
 [gpa-url]: https://codeclimate.com/github/daniellmb/generator-microjs
-[gpa-image]: http://img.shields.io/codeclimate/github/daniellmb/generator-microjs.svg
+[gpa-image]: http://img.shields.io/codeclimate/github/daniellmb/generator-microjs.png
 
 [coverage-url]: https://codeclimate.com/github/daniellmb/generator-microjs/code?sort=covered_percent&sort_direction=desc
-[coverage-image]: http://img.shields.io/codeclimate/coverage/github/daniellmb/generator-microjs.svg
+[coverage-image]: http://img.shields.io/codeclimate/coverage/github/daniellmb/generator-microjs.png
 
 [depstat-url]: https://david-dm.org/daniellmb/generator-microjs
 [depstat-image]: https://david-dm.org/daniellmb/generator-microjs.png?theme=shields.io
 
 [issues-url]: https://github.com/daniellmb/generator-microjs/issues
-[issues-image]: http://img.shields.io/github/issues/daniellmb/generator-microjs.svg
+[issues-image]: http://img.shields.io/github/issues/daniellmb/generator-microjs.png
 
 [downloads-url]: https://www.npmjs.org/package/generator-microjs
-[downloads-image]: http://img.shields.io/npm/dm/generator-microjs.svg
+[downloads-image]: http://img.shields.io/npm/dm/generator-microjs.png
 
 [npm-url]: https://www.npmjs.org/package/generator-microjs
 [npm-image]: https://badge.fury.io/js/generator-microjs.png
 
 [irc-url]: http://webchat.freenode.net/?channels=generator-microjs
-[irc-image]: http://img.shields.io/badge/irc-%23microjs-brightgreen.svg
+[irc-image]: http://img.shields.io/badge/irc-%23microjs-brightgreen.png
 
 [gitter-url]: https://gitter.im/daniellmb/generator-microjs
-[gitter-image]: http://img.shields.io/badge/gitter-daniellmb/generator-microjs-brightgreen.svg
+[gitter-image]: http://img.shields.io/badge/gitter-daniellmb/generator-microjs-brightgreen.png
 
 [tip-url]: https://www.gittip.com/daniellmb
-[tip-image]: http://img.shields.io/gittip/daniellmb.svg
+[tip-image]: http://img.shields.io/gittip/daniellmb.png
