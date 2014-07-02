@@ -231,6 +231,7 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
 
   projectFiles: function () {
     this.copy('editorconfig', '.editorconfig');
+    this.copy('npmignore', '.npmignore');
 
     // only copy over coffee if the option was set
     if (this.options.coffee) {

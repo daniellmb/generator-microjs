@@ -2,14 +2,14 @@
   "name": "<%= projName %>",
   "version": "0.0.1",
   "description": "<%= projName %> was created by generator-microjs.",
-  "homepage": "https://github.com/<%= githubUser %>/<%= projName %>",
   "author": {
     "name": "<%= realname %>",
     "email": "<%= email %>",
     "url": "<%= githubUrl %>"
   },
+  "homepage": "<%= githubUrl %>/<%= projName %>",
   "bugs": {
-    "url": "https://github.com/<%= githubUser %>/<%= projName %>/issues"
+    "url": "<%= githubUrl %>/<%= projName %>/issues"
   },
   "licenses": [
     {
@@ -36,6 +36,8 @@
     "framework",
     "library"
   ],
+  "dependencies": {
+  },
   "devDependencies": {<% if (taskFramework === 'gulp') { %>
     "gulp": "*",
     "gulp-jshint": "*",
@@ -55,8 +57,10 @@
     "karma-mocha": "*",
     "karma-chai": "*",
     "karma-sinon": "*",<% } %>
+    "karma-coverage": "*",
     "karma-phantomjs-launcher": "*"
   },
+  "preferGlobal": true,
   "engines": {
     "node": ">=0.10.0"
   }

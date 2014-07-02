@@ -67,6 +67,7 @@ describe('microjs generator', function () {
         'test/karma.conf.js',
         'test/spec/' + projName + '.spec.js',
         '.editorconfig',
+        '.npmignore',
         '.gitattributes',
         '.gitignore',
         '.jshintrc',
@@ -157,8 +158,10 @@ describe('microjs generator', function () {
 
         // the file should have the expected content
         var expectedContent = [
-          checkContents(file, '\'' + projName + '.js\''),
-          checkContents(file, 'pipe\\(rename\\(\'' + projName + '.min.js\'')
+          checkContents(file, 'source = \'' + projName + '.js\''),
+          checkContents(file, 'sourceMin = \'' + projName + '.min.js\''),
+          checkContents(file, 'gulp.src\\(sourceAndSpecs'),
+          checkContents(file, 'pipe\\(rename\\(sourceMin')
         ];
 
         // run the generator

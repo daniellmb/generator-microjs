@@ -1,13 +1,7 @@
-# package managers #
-####################
 node_modules/
 npm-debug.log
 bower_components/
-
-# generated files #
-######################
-coverage/
-.idea/
+temp/
 .DS_Store
 .DS_Store?
 ._*
@@ -16,3 +10,6 @@ Icon?
 ehthumbs.db
 Thumbs.db
 .tmp
+.idea/
+.gitignore
+.npmignore

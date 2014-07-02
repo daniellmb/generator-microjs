@@ -1,5 +1,6 @@
 {
   "node": true,
+  "browser": true,
   "esnext": true,
   "bitwise": true,
   "camelcase": true,
@@ -19,6 +20,9 @@
   "smarttabs": true,
   "white": true,
   "globals": {<% if (testFramework === 'mocha') { %>
+    "chai": false,
+    "sinon": false,
+    "assert": false,
     "describe": false,
     "it": false,
     "before": false,

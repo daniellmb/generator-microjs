@@ -9,17 +9,26 @@
  * @author <%= realname %> <<%= email %>>
  */
 'use strict';
-/*jshint -W030 */
 
 describe('<%= projName %>', function () {
+  var sandbox;
+
   beforeEach(function () {
-    // add spies
+    // create a sandbox
+    sandbox = sinon.sandbox.create();
+
+    // stub some methods
+  });
+
+  afterEach(function () {
+    // restore the environment as it was before
+    sandbox.restore();
   });
 
   it('should have a working test harness', function () {
     // arrange
     // act
     // assert
-    expect(true).to.not.be.false;
+    expect(true).to.not.equal(false);
   });
 });

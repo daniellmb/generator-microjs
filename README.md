@@ -2,7 +2,8 @@
 [![Build Status][build-image]][build-url]
 [![Code GPA][gpa-image]][gpa-url]
 [![Dependency Status][depstat-image]][depstat-url]
-[![NPM version][npm-image]][npm-url]
+[![Repo Issues][issues-image]][issues-url]
+[![NPM Version][npm-image]][npm-url]
 [![IRC Channel][irc-image]][irc-url]
 [![Gitter][gitter-image]][gitter-url]
 [![GitTip][tip-image]][tip-url]
@@ -11,7 +12,42 @@
 
 Quickly scaffold out a micro library or framework.
 
-## Getting Started
+## Features
+
+  * Files pre-filled using your GitHub account information.
+  * Choose your preferred task runner framework.
+    * [Gulp](http://gulpjs.com)
+    * [Grunt](http://gruntjs.com)
+  * Choose your preferred unit test runner framework.
+    * [Jasmine](http://jasmine.github.io)
+    * [Mocha](http://visionmedia.github.io/mocha)
+    * [QUnit](http://qunitjs.com) (TODO)
+  * Test coverage pre-configured to publish to code climate.
+  * README file
+    * Dynamic based on the project configurations.
+    * Pre-configured badges for:
+      * Travis Build Status: [![Build Status][build-image]][build-url]
+      * Code Quality GPA: [![Code GPA][gpa-image]][gpa-url]
+      * Dependency Status: [![Dependency Status][depstat-image]][depstat-url]
+      * Repo Issues: [![Repo Issues][issues-image]][issues-url]
+      * NPM Version: [![NPM Version][npm-image]][npm-url]
+      * NPM Downloads: [![NPM Downloads][downloads-image]][downloads-url]
+      * IRC Channel: [![IRC Channel][irc-image]][irc-url]
+      * Gitter Chat Room: [![Gitter][gitter-image]][gitter-url]
+      * GitTip: [![GitTip][tip-image]][tip-url]
+  * [JSHint](https://www.npmjs.org/package/jshint) pre-configured to lint the source code and unit tests.
+  * [Complexity Report](https://www.npmjs.org/package/complexity-report) pre-configured to analyze source code maintainability.
+  * [Karma](https://www.npmjs.org/package/karma) pre-configured to run unit tests.
+  * [Travis CI](https://travis-ci.org) pre-configured for continuous integration.
+  * Pre-configured `dot` files included
+    * .editorconfig
+    * .gitattributes
+    * .gitignore
+    * .jshintrc
+    * .npmignore
+    * .travis.yml
+
+## Setup
 
 You'll need Yeoman installed if you don't have it already.
 
@@ -19,15 +55,15 @@ You'll need Yeoman installed if you don't have it already.
 $ npm install -g yo
 ```
 
-### Setup
-
 To install generator-microjs from npm, run:
 
 ```bash
 $ npm install -g generator-microjs
 ```
 
-Go to your new project folder, run the generator and follow the prompts.
+# Use
+
+Go to your new project folder, run the generator and follow the prompts. The use `--coffee` flag is optional.
 
 ```bash
 $ yo microjs --coffee
@@ -48,6 +84,14 @@ $ npm test
 * `--coffee`
 
   Defaults to `true`. Add support for [CoffeeScript](http://coffeescript.org/).
+
+## Updating
+
+Use the following command to update to the latest version of generator-microjs.
+
+```bash
+$ npm update -g generator-microjs
+```
 
 ## Testing
 
@@ -94,7 +138,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [issues-image]: http://img.shields.io/github/issues/daniellmb/generator-microjs.png
 
 [downloads-url]: https://www.npmjs.org/package/generator-microjs
-[downloads-image]: http://img.shields.io/npm/dm/generator-microjs.png
+[downloads-image]: http://img.shields.io/npm/dm/underscore.png
 
 [npm-url]: https://www.npmjs.org/package/generator-microjs
 [npm-image]: https://badge.fury.io/js/generator-microjs.png

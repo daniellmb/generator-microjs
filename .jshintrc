@@ -19,6 +19,9 @@
   "smarttabs": true,
   "white": true,
   "globals": {
+    "chai": false,
+    "sinon": false,
+    "assert": false,
     "describe": false,
     "it": false,
     "before": false,

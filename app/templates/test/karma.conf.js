@@ -13,43 +13,74 @@
 module.exports = function (config) {
   config.set({
     /*
+     Path used to resolve file paths
+     */
+    basePath : '../',
+
+    /*
      Test results reporter to use:
-     dots, progress, nyan, story
+     dots, progress, nyan, story, coverage etc.
      */
-    reporters: ['dots'],
+    reporters: ['dots', 'coverage'],
 
     /*
-     Test framework to use
+     Test pre-processors
      */
-    frameworks: ['<%= testFramework %>'<% if (testFramework === 'mocha') {  %>, 'chai', 'sinon'<% } %>],
+    preprocessors: {
+      '<%= baseFileName %>.js': ['coverage']
+    },
 
     /*
-     locally installed browsers
-     Chrome, ChromeCanary, PhantomJS, Firefox, Opera, IE, Safari, iOS
+     Test coverage reporters:
+     html, lcovonly, lcov, cobertura, text-summary, text, teamcity, clover etc.
+     */
+    coverageReporter: {
+      reporters: [{
+        type: 'text',
+        dir: 'test/coverage'
+      }, {
+        type: 'lcov',
+        dir: 'test/coverage'
+      }]
+    },
+
+    /*
+     Locally installed browsers
+     Chrome, ChromeCanary, PhantomJS, Firefox, Opera, IE, Safari, iOS etc.
      */
     browsers: ['PhantomJS'],
 
-    // code coverage settings
-    coverage: {
-      // html, lcovonly, lcov, cobertura, text-summary, text, teamcity, clover
-      reporters: ['html', 'text', 'json']
-    },
-
-    // enable / disable watching file and executing tests whenever any file changes
+    /*
+     Enable / disable watching file and executing tests whenever any file changes
+     */
     autoWatch: false,
 
-    // Continuous Integration mode: if true, it capture browsers, run tests and exit
+    /*
+     Continuous Integration mode: if true, it capture browsers, run tests and exit
+     */
     singleRun: true,
 
-    // report slow running tests, time in ms
+    /*
+     Report slow running tests, time in ms
+     */
     reportSlowerThan: 250,
 
-    // If browser does not capture in given timeout [ms], kill it
-    // Increase timeout in case connection in CI is slow
+    /*
+     If browser does not capture in given timeout [ms], kill it
+     Increasing timeout in case connection in Travis CI is slow
+     */
     captureTimeout: 100000,
 
-    // logging level
-    // DISABLE, ERROR, WARN, INFO, DEBUG
-    logLevel: 'DEBUG'
+    /*
+     Logging Level:
+     DISABLE, ERROR, WARN, INFO, DEBUG
+    */
+    logLevel: 'DEBUG',
+
+    /*
+     Test framework to use:
+     jasmine, mocha, qunit etc.
+     */
+    frameworks: ['<%= testFramework %>'<% if (testFramework === 'mocha') {  %>, 'chai', 'sinon'<% } %>],
   });
 };
