@@ -3,7 +3,6 @@
 [![Test Coverage][coverage-image]][coverage-url]
 [![Code GPA][gpa-image]][gpa-url]
 [![Dependency Status][depstat-image]][depstat-url]
-[![Bower Version][bower-image]][bower-url]
 [![NPM version][npm-image]][npm-url]
 [![IRC Channel][irc-image]][irc-url]
 [![Gitter][gitter-image]][gitter-url]
@@ -104,9 +103,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [issues-url]: https://github.com/daniellmb/generator-microjs/issues
 [issues-image]: http://img.shields.io/github/issues/daniellmb/generator-microjs.svg
-
-[bower-url]: http://bower.io/search/?q=generator-microjs
-[bower-image]: https://badge.fury.io/bo/generator-microjs.png
 
 [downloads-url]: https://www.npmjs.org/package/generator-microjs
 [downloads-image]: http://img.shields.io/npm/dm/generator-microjs.svg
