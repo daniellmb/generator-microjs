@@ -2,7 +2,6 @@
 [![Build Status][build-image]][build-url]
 [![Code GPA][gpa-image]][gpa-url]
 [![Dependency Status][depstat-image]][depstat-url]
-[![Repo Issues][issues-image]][issues-url]
 [![NPM Version][npm-image]][npm-url]
 [![IRC Channel][irc-image]][irc-url]
 [![Gitter][gitter-image]][gitter-url]
