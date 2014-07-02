@@ -60,7 +60,7 @@ To install generator-microjs from npm, run:
 $ npm install -g generator-microjs
 ```
 
-# Use
+## Use
 
 Go to your new project folder, run the generator and follow the prompts. The use `--coffee` flag is optional.
 
