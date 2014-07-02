@@ -157,7 +157,7 @@ describe('microjs generator', function () {
 
         // the file should have the expected content
         var expectedContent = [
-          checkContents(file, 'gulp.src\\(\'' + projName + '.js\''),
+          checkContents(file, '\'' + projName + '.js\''),
           checkContents(file, 'pipe\\(rename\\(\'' + projName + '.min.js\'')
         ];
 
