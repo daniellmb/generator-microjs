@@ -1,6 +1,6 @@
 {
   "name": "generator-microjs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Scaffold out a micro library or framework using yeoman.",
   "license": "MIT",
   "main": "app/index.js",
