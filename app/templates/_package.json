@@ -1,0 +1,62 @@
+{
+  "name": "<%= projName %>",
+  "version": "0.0.1",
+  "description": "Micro-library created by generator-microjs.",
+  "homepage": "https://github.com/<%= githubUser %>/<%= projName %>",
+  "author": {
+    "name": "<%= realname %>",
+    "email": "<%= email %>",
+    "url": "<%= githubUrl %>"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= githubUser %>/<%= projName %>/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT"<% if (useMitOrg) { %>,
+      "url": "http://<%= githubUser %>.mit-license.org"<% } %>
+    }
+  ],
+  "maintainers": [],
+  "contributors": [{
+    "name": "Daniel Lamb",
+    "email": "dlamb.open.source@gmail.com",
+    "url": "https://github.com/daniellmb"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/<%= githubUser %>/<%= projName %>.git"
+  },
+  "main": "<%= projName %>.js",
+  "scripts": {
+    "test": "<%= taskFramework %>"
+  },
+  "keywords": [
+    "micro",
+    "framework",
+    "library"
+  ],
+  "devDependencies": {<% if (taskFramework === 'gulp') { %>
+    "gulp": "*",
+    "gulp-jshint": "*",
+    "gulp-complexity": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*",<% if (options.coffee) { %>
+    "gulp-coffee": "*",<% } %>
+    "gulp-karma": "*",<% } %><% if (taskFramework === 'grunt') { %>
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-complexity": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-karma": "*",<% if (options.coffee) { %>
+    "grunt-contrib-coffee": "*",<% } %><% } %><% if (testFramework === 'jasmine') { %>
+    "karma-jasmine": "*"<% } %><% if (testFramework === 'mocha') {  %>
+    "mocha": "*",
+    "karma-mocha": "*",
+    "karma-chai": "*",
+    "karma-sinon": "*"<% } %>
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

@@ -1,0 +1,18 @@
+# package managers #
+####################
+node_modules/
+npm-debug.log
+bower_components/
+temp/
+
+# generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+.tmp
+.idea/

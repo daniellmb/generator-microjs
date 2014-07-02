@@ -1,0 +1,13 @@
+{
+  "name": "<%= projName %>",
+  "version": "0.0.1",
+  "ignore": [
+
+  ],
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
