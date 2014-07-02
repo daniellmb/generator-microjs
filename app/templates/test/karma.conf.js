@@ -42,7 +42,7 @@ module.exports = function (config) {
      locally installed browsers
      Chrome, ChromeCanary, PhantomJS, Firefox, Opera, IE, Safari, iOS
      */
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
     // code coverage settings
     coverage: {

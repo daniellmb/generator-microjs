@@ -131,6 +131,7 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
       }
 
       this.projName = props.projName;
+      this.baseFileName = path.basename(this.projName, path.extname(this.projName));
 
       done();
     }.bind(this));
@@ -229,17 +230,15 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
   },
 
   projectFiles: function () {
-    var baseFileName = path.basename(this.projName, path.extname(this.projName));
-    
     this.copy('editorconfig', '.editorconfig');
 
     // only copy over coffee if the option was set
     if (this.options.coffee) {
-      this.template('micro-tmpl.coffee', baseFileName + '.coffee');
+      this.template('micro-tmpl.coffee', this.baseFileName + '.coffee');
     }
-    this.template('micro-tmpl.js', baseFileName + '.js');
-    this.template('micro-tmpl.min.js', baseFileName + '.min.js');
-    this.template('micro-tmpl.min.js', baseFileName + '.min.js.map');
+    this.template('micro-tmpl.js', this.baseFileName + '.js');
+    this.template('micro-tmpl.min.js', this.baseFileName + '.min.js');
+    this.template('micro-tmpl.min.js', this.baseFileName + '.min.js.map');
     this.template('README.md', 'README.md');
   },
 
@@ -252,10 +251,8 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
   },
 
   tests: function () {
-    var baseFileName = path.basename(this.projName, path.extname(this.projName));
-
     this.mkdir('test/spec');
-    this.template('test/' + this.testFramework + '.spec.js', 'test/spec/' + baseFileName + '.spec.js');
+    this.template('test/' + this.testFramework + '.spec.js', 'test/spec/' + this.baseFileName + '.spec.js');
   }
 });
 

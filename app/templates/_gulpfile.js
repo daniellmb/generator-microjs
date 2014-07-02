@@ -14,10 +14,11 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     complexity = require('gulp-complexity'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    karma = require('gulp-karma');
 
 gulp.task('default', function () {
-  return gulp.src('<%= projName %>.js')
+  return gulp.src('<%= baseFileName %>.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(jshint.reporter('fail'))
@@ -26,7 +27,11 @@ gulp.task('default', function () {
       halstead: [9],
       maintainability: [100]
     }))
-    .pipe(rename('<%= projName %>.min.js'))
+    .pipe(karma({
+      configFile: './test/karma.conf.js',
+      action: 'run'
+    }))
+    .pipe(rename('<%= baseFileName %>.min.js'))
     .pipe(uglify({
       preserveComments: 'some',
       outSourceMap: true

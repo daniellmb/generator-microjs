@@ -11,7 +11,7 @@
 
 ## About
 
-All about how amazing your micro-library is.
+All about how amazing your <%= projName %> micro-library is.
 
 ## Examples
 

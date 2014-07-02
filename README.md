@@ -13,6 +13,8 @@ Quickly scaffold out a micro library or framework.
 
 ## Getting Started
 
+You'll need Yeoman installed if you don't have it already.
+
 ```bash
 $ npm install -g yo
 ```
@@ -25,10 +27,10 @@ To install generator-microjs from npm, run:
 $ npm install -g generator-microjs
 ```
 
-Go to your new project folder, run the generator (with the optional `--coffee` flag if desired), and follow the prompts.
+Go to your new project folder, run the generator and follow the prompts.
 
 ```bash
-$ yo microjs
+$ yo microjs --coffee
 ```
 
 Write unit tests and add code to create you micro-framework or library. Run your tests using:

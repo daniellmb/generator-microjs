@@ -27,7 +27,7 @@
     "type": "git",
     "url": "git://github.com/<%= githubUser %>/<%= projName %>.git"
   },
-  "main": "<%= projName %>.js",
+  "main": "<%= baseFileName %>.js",
   "scripts": {
     "test": "<%= taskFramework %>"
   },
@@ -50,11 +50,12 @@
     "grunt-contrib-uglify": "*",
     "grunt-karma": "*",<% if (options.coffee) { %>
     "grunt-contrib-coffee": "*",<% } %><% } %><% if (testFramework === 'jasmine') { %>
-    "karma-jasmine": "*"<% } %><% if (testFramework === 'mocha') {  %>
+    "karma-jasmine": "*",<% } %><% if (testFramework === 'mocha') {  %>
     "mocha": "*",
     "karma-mocha": "*",
     "karma-chai": "*",
-    "karma-sinon": "*"<% } %>
+    "karma-sinon": "*",<% } %>
+    "karma-phantomjs-launcher": "*"
   },
   "engines": {
     "node": ">=0.10.0"
