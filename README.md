@@ -94,8 +94,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [irc-url]: http://webchat.freenode.net/?channels=generator-microjs
 [irc-image]: http://img.shields.io/badge/irc-%23microjs-brightgreen.svg
 
-[gitter-url]: https://gitter.im/daniellmb/microjs
-[gitter-image]: http://img.shields.io/badge/gitter-daniellmb/microjs-brightgreen.svg
+[gitter-url]: https://gitter.im/daniellmb/generator-microjs
+[gitter-image]: http://img.shields.io/badge/gitter-daniellmb/generator-microjs-brightgreen.svg
 
 [tip-url]: https://www.gittip.com/daniellmb
 [tip-image]: http://img.shields.io/gittip/daniellmb.svg
