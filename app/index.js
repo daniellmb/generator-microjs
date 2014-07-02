@@ -1,6 +1,7 @@
 'use strict';
 
 var url = require('url');
+var path = require('path');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 var npmName = require('npm-name');
@@ -228,15 +229,17 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
   },
 
   projectFiles: function () {
+    var baseFileName = path.basename(this.projName, path.extname(this.projName));
+    
     this.copy('editorconfig', '.editorconfig');
 
     // only copy over coffee if the option was set
     if (this.options.coffee) {
-      this.template('micro-tmpl.coffee', this.projName + '.coffee');
+      this.template('micro-tmpl.coffee', baseFileName + '.coffee');
     }
-    this.template('micro-tmpl.js', this.projName + '.js');
-    this.template('micro-tmpl.min.js', this.projName + '.min.js');
-    this.template('micro-tmpl.min.js', this.projName + '.min.js.map');
+    this.template('micro-tmpl.js', baseFileName + '.js');
+    this.template('micro-tmpl.min.js', baseFileName + '.min.js');
+    this.template('micro-tmpl.min.js', baseFileName + '.min.js.map');
     this.template('README.md', 'README.md');
   },
 
@@ -249,8 +252,10 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
   },
 
   tests: function () {
+    var baseFileName = path.basename(this.projName, path.extname(this.projName));
+
     this.mkdir('test/spec');
-    this.template('test/' + this.testFramework + '.spec.js', 'test/spec/' + this.projName + '.spec.js');
+    this.template('test/' + this.testFramework + '.spec.js', 'test/spec/' + baseFileName + '.spec.js');
   }
 });
 

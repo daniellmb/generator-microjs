@@ -25,10 +25,16 @@ To install generator-microjs from npm, run:
 $ npm install -g generator-microjs
 ```
 
-Finally, initiate the generator:
+Go to your new project folder, run the generator (with the optional `--coffee` flag if desired), and follow the prompts.
 
 ```bash
 $ yo microjs
+```
+
+Write unit tests and add code to create you micro-framework or library. Run your tests using:
+
+```bash
+$ npm test
 ```
 
 ## Options
