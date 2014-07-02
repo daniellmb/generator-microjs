@@ -75,7 +75,7 @@ module.exports = function (config) {
      Logging Level:
      DISABLE, ERROR, WARN, INFO, DEBUG
     */
-    logLevel: 'DEBUG',
+    logLevel: 'INFO',
 
     /*
      Test framework to use:
