@@ -1,7 +1,7 @@
 # <%= projName %>
 [![Build Status][build-image]][build-url]
-[![Test Coverage][coverage-image]][coverage-url]
 [![Code GPA][gpa-image]][gpa-url]
+[![Test Coverage][coverage-image]][coverage-url]
 [![Dependency Status][depstat-image]][depstat-url]
 [![Bower Version][bower-image]][bower-url]
 [![NPM version][npm-image]][npm-url]
@@ -61,11 +61,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [build-url]: https://travis-ci.org/<%= githubUser %>/<%= projName %>
 [build-image]: http://img.shields.io/travis/<%= githubUser %>/<%= projName %>.svg
 
-[coverage-url]: https://codeclimate.com/github/<%= githubUser %>/<%= projName %>/code?sort=covered_percent&sort_direction=desc
-[coverage-image]: http://img.shields.io/codeclimate/coverage/github/<%= githubUser %>/<%= projName %>.svg
-
 [gpa-url]: https://codeclimate.com/github/<%= githubUser %>/<%= projName %>
 [gpa-image]: http://img.shields.io/codeclimate/github/<%= githubUser %>/<%= projName %>.svg
+
+[coverage-url]: https://codeclimate.com/github/<%= githubUser %>/<%= projName %>/code?sort=covered_percent&sort_direction=desc
+[coverage-image]: http://img.shields.io/codeclimate/coverage/github/<%= githubUser %>/<%= projName %>.svg
 
 [depstat-url]: https://david-dm.org/<%= githubUser %>/<%= projName %>
 [depstat-image]: https://david-dm.org/<%= githubUser %>/<%= projName %>.png?theme=shields.io

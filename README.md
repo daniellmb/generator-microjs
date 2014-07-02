@@ -1,6 +1,5 @@
 # generator-microjs
 [![Build Status][build-image]][build-url]
-[![Test Coverage][coverage-image]][coverage-url]
 [![Code GPA][gpa-image]][gpa-url]
 [![Dependency Status][depstat-image]][depstat-url]
 [![NPM version][npm-image]][npm-url]
@@ -74,11 +73,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [build-url]: https://travis-ci.org/daniellmb/generator-microjs
 [build-image]: http://img.shields.io/travis/daniellmb/generator-microjs.svg
 
-[coverage-url]: https://codeclimate.com/github/daniellmb/generator-microjs/code?sort=covered_percent&sort_direction=desc
-[coverage-image]: http://img.shields.io/codeclimate/coverage/github/daniellmb/generator-microjs.svg
-
 [gpa-url]: https://codeclimate.com/github/daniellmb/generator-microjs
 [gpa-image]: http://img.shields.io/codeclimate/github/daniellmb/generator-microjs.svg
+
+[coverage-url]: https://codeclimate.com/github/daniellmb/generator-microjs/code?sort=covered_percent&sort_direction=desc
+[coverage-image]: http://img.shields.io/codeclimate/coverage/github/daniellmb/generator-microjs.svg
 
 [depstat-url]: https://david-dm.org/daniellmb/generator-microjs
 [depstat-image]: https://david-dm.org/daniellmb/generator-microjs.png?theme=shields.io
