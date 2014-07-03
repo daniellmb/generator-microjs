@@ -8,7 +8,7 @@ before_script:
 
 after_script:
   #TODO: enable publishing code coverage reports
-  #- codeclimate < test/coverage/lcov.info
+  #- codeclimate < test/coverage/**/lcov.info
 
 notifications:
   # publish build status to IRC channel: #<%= projName %>
