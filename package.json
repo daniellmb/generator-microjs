@@ -1,9 +1,8 @@
 {
   "name": "generator-microjs",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Scaffold out a micro library or framework using yeoman.",
   "license": "MIT",
-  "main": "app/index.js",
   "repository": "daniellmb/generator-microjs",
   "author": {
     "name": "Daniel Lamb",
@@ -25,6 +24,7 @@
   "files": [
     "app"
   ],
+  "main": "app/index.js",
   "keywords": [
     "micro",
     "library",

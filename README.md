@@ -13,11 +13,12 @@ Quickly scaffold out a micro library or framework.
 
 ## Features
 
-  * Files pre-filled using your GitHub account information.
+  * Pre-fills information using your GitHub account data.
+  * Checks if your new project name is already taken on NPM.
   * Choose your preferred task runner framework.
     * [Gulp](http://gulpjs.com)
     * [Grunt](http://gruntjs.com)
-  * Choose your preferred unit test runner framework.
+  * Choose your preferred unit test framework.
     * [Jasmine](http://jasmine.github.io)
     * [Mocha](http://visionmedia.github.io/mocha)
     * [QUnit](http://qunitjs.com) (TODO)
@@ -34,10 +35,11 @@ Quickly scaffold out a micro library or framework.
       * Gitter Chat Room: [![Gitter][gitter-image]][gitter-url]
       * GitTip: [![GitTip][tip-image]][tip-url]
   * [JSHint](https://www.npmjs.org/package/jshint) pre-configured to lint the source code and unit tests.
-  * [Complexity Report](https://www.npmjs.org/package/complexity-report) pre-configured to analyze source code maintainability.
-  * [Karma](https://www.npmjs.org/package/karma) pre-configured to run unit tests.
-  * [Travis CI](https://travis-ci.org) pre-configured for continuous integration.
-  * Pre-configured `dot` files included
+  * [Complexity Report](https://www.npmjs.org/package/complexity-report) pre-configured to analyze source code for maintainability.
+  * [Karma](https://www.npmjs.org/package/karma) pre-configured to run unit tests in your chosen framework.
+  * [Travis CI](https://travis-ci.org) configured for continuous integration.
+    * pre-configured to publish build status to your project IRC channel and gitter chat room.
+  * included `dot` files
     * .editorconfig
     * .gitattributes
     * .gitignore
@@ -62,6 +64,12 @@ $ npm install -g generator-microjs
 ## Use
 
 Go to your new project folder, run the generator and follow the prompts. The use `--coffee` flag is optional.
+
+```bash
+$ yo microjs --coffee
+```
+
+Check the generated `.travis.yml` file you'll need to fill in some data if you want to publish build status and test coverage reports.
 
 ```bash
 $ yo microjs --coffee

@@ -2,7 +2,7 @@
  * @file
  *
  * ### Responsibilities
- * - configure grunt-karma for <%= testFramework %> testing
+ * - configure karma for <%= testFramework %> testing
  *
  * Generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> v<%= pkg.version %>
  *
@@ -81,6 +81,6 @@ module.exports = function (config) {
      Test framework to use:
      jasmine, mocha, qunit etc.
      */
-    frameworks: ['<%= testFramework %>'<% if (testFramework === 'mocha') {  %>, 'chai', 'sinon'<% } %>],
+    frameworks: ['<%= testFramework %>'<% if (testFramework === 'mocha') {  %>, 'chai', 'sinon'<% } %>]
   });
 };

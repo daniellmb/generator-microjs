@@ -42,6 +42,13 @@ gulp.task('test', function () {
       configFile: 'test/karma.conf.js'
     }));
 });
+<% if (options.coffee) { %>
+gulp.task('test-coffee', function () {
+  return gulp.src(['<%= baseFileName %>.coffee', 'test/spec/*.spec.coffee'])
+    .pipe(karma({
+      configFile: 'test/karma.conf.coffee'
+    }));
+});<% } %>
 
 gulp.task('min', function () {
   return gulp.src(source)
@@ -53,4 +60,4 @@ gulp.task('min', function () {
     .pipe(gulp.dest('.'));
 });
 
-gulp.task('default', ['lint', 'gpa', 'test', 'min']);
+gulp.task('default', ['lint', 'gpa', 'test',<% if (options.coffee) { %> 'test-coffee',<% } %> 'min']);

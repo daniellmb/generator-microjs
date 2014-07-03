@@ -83,7 +83,9 @@ describe('microjs generator', function () {
       // the unexpected files should not exist
       var unexpectedFiles = [
         'gruntfile.js',
-        projName + '.coffee'
+        projName + '.coffee',
+        'test/karma.conf.coffee',
+        'test/spec/' + projName + '.spec.coffee'
       ];
 
       // run the generator
@@ -189,6 +191,7 @@ describe('microjs generator', function () {
 
         // the file should not have unexpected content
         var unexpectedContent = [
+          checkContents(file, 'coffee'),
           checkContents(file, 'grunt'),
           checkContents(file, 'mocha')
         ];
@@ -299,51 +302,7 @@ describe('microjs generator', function () {
         });
       });
     });
-  });
 
-  describe('when --coffee is set', function () {
-    beforeEach(function () {
-      // set use coffee option
-      this.app.options.coffee = true;
-    });
-
-    it('should create the expected files', function (done) {
-      // the expected files should exist
-      var expectedFiles = [
-        projName + '.coffee'
-      ];
-
-      // run the generator
-      this.app.run({}, function () {
-
-        // check for expected files
-        helpers.assertFile(expectedFiles);
-
-        done();
-      });
-    });
-
-    describe(projName + '.coffee', function () {
-      var file = projName + '.coffee';
-
-      it('should contain the correct contents', function (done) {
-
-        // the file should have the expected content
-        var expectedContent = [
-          checkContents(file, '@file ' + projName + ' was created using generator-microjs'),
-          checkContents(file, '@author Daniel Lamb <dlamb.open.source@gmail.com>')
-        ];
-
-        // run the generator
-        this.app.run({}, function () {
-
-          // check for expected file contents
-          helpers.assertFileContent(expectedContent);
-
-          done();
-        });
-      });
-    });
   });
 
   describe('when taskFramework is grunt', function () {
@@ -419,6 +378,7 @@ describe('microjs generator', function () {
         });
       });
     });
+
   });
 
   describe('when testFramework is mocha', function () {
@@ -458,4 +418,74 @@ describe('microjs generator', function () {
       });
     });
   });
+
+  describe('when --coffee is set', function () {
+    beforeEach(function () {
+      // set use coffee option
+      this.app.options.coffee = true;
+    });
+
+    it('should create the expected files', function (done) {
+      // the expected files should exist
+      var expectedFiles = [
+        projName + '.coffee',
+        'test/karma.conf.coffee',
+        'test/spec/' + projName + '.spec.coffee'
+      ];
+
+      // run the generator
+      this.app.run({}, function () {
+
+        // check for expected files
+        helpers.assertFile(expectedFiles);
+
+        done();
+      });
+    });
+
+    describe('package.json', function () {
+      var file = 'package.json';
+
+      it('should contain the correct contents', function (done) {
+
+        // the file should have the expected content
+        var expectedContent = [
+          checkContents(file, 'coffee')
+        ];
+
+        // run the generator
+        this.app.run({}, function () {
+
+          // check for expected file contents
+          helpers.assertFileContent(expectedContent);
+
+          done();
+        });
+      });
+    });
+
+    describe(projName + '.coffee', function () {
+      var file = projName + '.coffee';
+
+      it('should contain the correct contents', function (done) {
+
+        // the file should have the expected content
+        var expectedContent = [
+          checkContents(file, '@file ' + projName + ' was created using generator-microjs'),
+          checkContents(file, '@author Daniel Lamb <dlamb.open.source@gmail.com>')
+        ];
+
+        // run the generator
+        this.app.run({}, function () {
+
+          // check for expected file contents
+          helpers.assertFileContent(expectedContent);
+
+          done();
+        });
+      });
+    });
+
+  });
+
 });

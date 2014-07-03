@@ -221,6 +221,10 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
     this.copy('gitignore', '.gitignore');
   },
 
+  travis: function () {
+    this.template('travis.yml', '.travis.yml');
+  },
+
   taskRunner: function () {
     if (this.taskFramework === 'grunt') {
       this.template('_gruntfile.js', 'gruntfile.js');
@@ -244,6 +248,10 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
   },
 
   testConfig: function () {
+    // only copy over coffee if the option was set
+    if (this.options.coffee) {
+      this.template('test/karma.conf.coffee', 'test/karma.conf.coffee');
+    }
     this.template('test/karma.conf.js', 'test/karma.conf.js');
   },
 
@@ -253,6 +261,10 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
 
   tests: function () {
     this.mkdir('test/spec');
+    // only copy over coffee if the option was set
+    if (this.options.coffee) {
+      this.template('test/' + this.testFramework + '.spec.coffee', 'test/spec/' + this.baseFileName + '.spec.coffee');
+    }
     this.template('test/' + this.testFramework + '.spec.js', 'test/spec/' + this.baseFileName + '.spec.js');
   }
 });

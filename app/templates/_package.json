@@ -56,7 +56,9 @@
     "mocha": "*",
     "karma-mocha": "*",
     "karma-chai": "*",
-    "karma-sinon": "*",<% } %>
+    "karma-sinon": "*",<% } %><% if (options.coffee) { %>
+    "coffee-script": "*",
+    "karma-coffee-preprocessor": "*",<% } %>
     "karma-coverage": "*",
     "karma-phantomjs-launcher": "*"
   },
