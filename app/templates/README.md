@@ -13,12 +13,18 @@
 
 All about how amazing the <%= projName %> micro-library is.
 
+This repository was scaffolded with [<%= pkg.name %>](https://github.com/daniellmb/generator-microjs) v<%= pkg.version %>.
+
 ## Examples
+
+### JavaScript
 
 ```JavaScript
   // TODO
 ```
 <% if (options.coffee) { %>
+### CoffeeScript
+
 ```CoffeeScript
   # TODO
 ```
@@ -68,10 +74,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [build-image]: http://img.shields.io/travis/<%= githubUser %>/<%= projName %>.png
 
 [gpa-url]: https://codeclimate.com/github/<%= githubUser %>/<%= projName %>
-[gpa-image]: http://img.shields.io/codeclimate/github/<%= githubUser %>/<%= projName %>.png
+[gpa-image]: https://codeclimate.com/github/<%= githubUser %>/<%= projName %>.png
 
 [coverage-url]: https://codeclimate.com/github/<%= githubUser %>/<%= projName %>/code?sort=covered_percent&sort_direction=desc
-[coverage-image]: http://img.shields.io/codeclimate/coverage/github/<%= githubUser %>/<%= projName %>.png
+[coverage-image]: https://codeclimate.com/github/<%= githubUser %>/<%= projName %>/coverage.png
 
 [depstat-url]: https://david-dm.org/<%= githubUser %>/<%= projName %>
 [depstat-image]: https://david-dm.org/<%= githubUser %>/<%= projName %>.png?theme=shields.io
@@ -89,7 +95,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [npm-image]: https://badge.fury.io/js/<%= projName %>.png
 
 [irc-url]: http://webchat.freenode.net/?channels=<%= projName %>
-[irc-image]: http://img.shields.io/badge/irc-%23microseed-brightgreen.png
+[irc-image]: http://img.shields.io/badge/irc-%23<%= projName %>-brightgreen.png
 
 [gitter-url]: https://gitter.im/<%= githubUser %>/<%= projName %>
 [gitter-image]: http://img.shields.io/badge/gitter-<%= githubUser %>/<%= projName %>-brightgreen.png

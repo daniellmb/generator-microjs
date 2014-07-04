@@ -1,6 +1,6 @@
 {
   "name": "generator-microjs",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Scaffold out a micro library or framework using yeoman.",
   "license": "MIT",
   "repository": "daniellmb/generator-microjs",
@@ -29,6 +29,8 @@
     "micro",
     "library",
     "framework",
+    "scaffold",
+    "generator",
     "yeoman-generator",
     "web",
     "front-end",

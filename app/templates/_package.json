@@ -1,7 +1,7 @@
 {
   "name": "<%= projName %>",
   "version": "0.0.1",
-  "description": "<%= projName %> was created using generator-microjs.",
+  "description": "<%= projName %> scaffolded with <%= pkg.name %> v<%= pkg.version %>.",
   "author": {
     "name": "<%= realname %>",
     "email": "<%= email %>",

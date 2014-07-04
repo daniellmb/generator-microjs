@@ -64,19 +64,33 @@ $ npm install -g generator-microjs
 
 ## Scaffolding
 
-Go to your new project folder, run the generator and follow the prompts. The use `--coffee` flag is optional.
+Go to your new project folder, run the generator and answer the prompts. The use `--coffee` flag is optional.
 
 ```bash
 $ yo microjs --coffee
 ```
 
-Check the generated `.travis.yml` file you'll need to fill in some data if you want to publish build status and test coverage reports.
+## Check List
 
-Write unit tests and add code to create you micro-framework or library. Run your tests using:
+Step-by-step for creating a new micro-lib. A LOT will be done for you, but there are some things you should customize in your newly scaffolded micro-library.
 
-```bash
-$ npm test
-```
+  1. Create an empty repository on [GitHub](https://github.com).
+  1. Clone it to your computer
+  1. Go to your new project folder, run the `microjs` generator and answer the prompts.
+  1. NPM
+    1. Update the description in your `package.json` file and add appropriate keywords.
+    1. Shrinkwrap your node.js modules using `npm shrinkwrap -dev`
+  1. Travis
+    1. enable any build status notifications you want published.
+    1. enable publishing test coverage to code climate.
+  1. Writing unit tests for your code.
+  1. Implementing your micro library or framework.
+  1. Activate the repository in [Travis](https://travis-ci.org).
+  1. Push you *initial commit* to GitHub.
+  1. Activate the repository on [CodeClimate](https://codeclimate.com).
+  1. Create a new release of your code on GitHub.
+  1. Publish version to NPM with `npm publish`.
+  1. Register your framework with [Bower](http://bower.io/).
 
 ## Options
 
