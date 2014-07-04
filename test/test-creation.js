@@ -247,7 +247,7 @@ describe('microjs generator', function () {
 
         // the file should have the expected content
         var expectedContent = [
-          checkContents(file, '@file ' + projName + ' was created using generator-microjs'),
+          checkContents(file, '@file ' + projName + ' is micro-library.'),
           checkContents(file, '@author Daniel Lamb <dlamb.open.source@gmail.com>')
         ];
 
@@ -450,7 +450,7 @@ describe('microjs generator', function () {
 
         // the file should have the expected content
         var expectedContent = [
-          checkContents(file, '@file ' + projName + ' was created using generator-microjs'),
+          checkContents(file, '@file ' + projName + ' is micro-library.'),
           checkContents(file, '@author Daniel Lamb <dlamb.open.source@gmail.com>')
         ];
 

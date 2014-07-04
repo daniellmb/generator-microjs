@@ -13,7 +13,7 @@
 
 All about how amazing the <%= projName %> micro-library is.
 
-This repository was scaffolded with [<%= pkg.name %>](https://github.com/daniellmb/generator-microjs) v<%= pkg.version %>.
+This repository was scaffolded with [<%= pkg.name %>](https://github.com/daniellmb/generator-microjs).
 
 ## Examples
 
