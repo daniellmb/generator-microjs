@@ -2,14 +2,14 @@
 @file
 
 ## Responsibilities
-- unit test <%= projName %>
+- unit test <%= baseFileName %>.coffee
 
-Generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> v<%= pkg.version %>
+Scaffolded with <%= pkg.name %> v<%= pkg.version %>
 
 @author <%= realname %> <<%= email %>>
 ###
 
-describe '<%= projName %>.coffee', ->
+describe '<%= baseFileName %>.coffee', ->
   sandbox = undefined
   beforeEach ->
     # create a sandbox
@@ -25,3 +25,16 @@ describe '<%= projName %>.coffee', ->
     # act
     # assert
     expect(yes).to.not.equal no
+
+  it 'should exist', ->
+    # arrange
+    # act
+    # assert
+    expect(typeof <%= exportName %>).to.equal 'function'
+
+  it 'should return nothing', ->
+    # arrange
+    # act
+    result = <%= exportName %>();
+    # assert
+    expect(result).to.equal undefined

@@ -43,6 +43,7 @@
     "gulp-jshint": "*",
     "gulp-complexity": "*",
     "gulp-rename": "*",
+    "gulp-replace": "*",
     "gulp-uglify": "*",<% if (options.coffee) { %>
     "gulp-coffee": "*",<% } %>
     "gulp-karma": "*",<% } %><% if (taskFramework === 'grunt') { %>

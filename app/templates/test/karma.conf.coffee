@@ -4,7 +4,7 @@
 ## Responsibilities
 - configure karma for <%= testFramework %> testing
 
-Generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> v<%= pkg.version %>
+Scaffolded with <%= pkg.name %> v<%= pkg.version %>
 
 @author <%= realname %> <<%= email %>>
 ###

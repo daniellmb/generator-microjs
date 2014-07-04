@@ -14,17 +14,19 @@
   "quotmark": "single",
   "regexp": true,
   "undef": true,
-  "unused": false,
-  "strict": true,
+  "strict": false,
   "trailing": true,
   "smarttabs": true,
+  "validthis": true,
   "white": true,
-  "globals": {<% if (testFramework === 'mocha') { %>
+  "globals":{<% if (testFramework === 'mocha') { %>
     "chai": false,
     "sinon": false,
     "assert": false,
     "describe": false,
+    "xdescribe": false,
     "it": false,
+    "xit": false,
     "before": false,
     "after": false,
     "beforeEach": false,
@@ -33,14 +35,15 @@
     "test": false,
     "setup": false,
     "teardown": false,
-    "expect": false<% } %><% if (testFramework === 'jasmine') { %>
+    "expect": false,<% } %><% if (testFramework === 'jasmine') { %>
     "describe": false,
+    "xdescribe": false,
     "it": false,
+    "xit": false,
     "beforeEach": false,
     "afterEach": false,
     "expect": false,
-    "spyOn": false,
-    "xdescribe": false,
-    "xit": false<% } %>
+    "spyOn": false,<% } %>
+    "define": false
   }
 }

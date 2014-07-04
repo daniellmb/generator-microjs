@@ -2,15 +2,16 @@
  * @file
  *
  * ### Responsibilities
- * - unit test <%= projName %>
+ * - unit test <%= baseFileName %>.js
  *
- * Generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> v<%= pkg.version %>
+ * Scaffolded with <%= pkg.name %> v<%= pkg.version %>
  *
  * @author <%= realname %> <<%= email %>>
  */
 'use strict';
 
-describe('<%= projName %>', function () {
+/*global <%= exportName %>*/
+describe('<%= baseFileName %>.js', function () {
   var sandbox;
 
   beforeEach(function () {
@@ -31,4 +32,20 @@ describe('<%= projName %>', function () {
     // assert
     expect(true).to.not.equal(false);
   });
+
+  it('should exist', function () {
+    // arrange
+    // act
+    // assert
+    expect(typeof <%= exportName %>).to.equal('function');
+  });
+
+  it('should return nothing', function () {
+    // arrange
+    // act
+    var result = <%= exportName %>();
+    // assert
+    expect(result).to.equal(undefined);
+  });
+
 });

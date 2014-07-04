@@ -23,6 +23,7 @@ Quickly scaffold out a micro library or framework.
     * [Mocha](http://visionmedia.github.io/mocha)
     * [QUnit](http://qunitjs.com) (TODO)
   * Test coverage pre-configured to publish to code climate.
+  * Micro library template is pre-configured for AMD, Node.js and browser support.
   * README file
     * Dynamic based on the project configurations.
     * Pre-configured badges for:
@@ -61,7 +62,7 @@ To install generator-microjs from npm, run:
 $ npm install -g generator-microjs
 ```
 
-## Use
+## Scaffolding
 
 Go to your new project folder, run the generator and follow the prompts. The use `--coffee` flag is optional.
 
@@ -70,10 +71,6 @@ $ yo microjs --coffee
 ```
 
 Check the generated `.travis.yml` file you'll need to fill in some data if you want to publish build status and test coverage reports.
-
-```bash
-$ yo microjs --coffee
-```
 
 Write unit tests and add code to create you micro-framework or library. Run your tests using:
 

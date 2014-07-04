@@ -11,7 +11,7 @@
 
 ## About
 
-All about how amazing your <%= projName %> micro-library is.
+All about how amazing the <%= projName %> micro-library is.
 
 ## Examples
 
@@ -27,9 +27,15 @@ All about how amazing your <%= projName %> micro-library is.
 - `bower install <%= projName %>`
 - [download the zip](https://github.com/<%= githubUser %>/<%= projName %>/archive/master.zip)
 
-## Testing
+## Tasks
 
-Tests can be run with the `npm test` command.
+All tasks can be run by simply running `<%= taskFramework %>` or with the `npm test` command, or individually:
+
+  * `<%= taskFramework %> lint` will lint source code for syntax errors and anti-patterns.
+  * `<%= taskFramework %> gpa` will analyze source code against complexity thresholds.
+  * `<%= taskFramework %> test` will run the <%= testFramework %> unit tests against the source code.<% if (options.coffee) { %>
+  * `<%= taskFramework %> test-coffee` will run the <%= testFramework %> unit tests against the CoffeeScript source code.<% } %>
+  * `<%= taskFramework %> test-min` will run the <%= testFramework %> unit tests against the minified code.
 
 ## License
 

@@ -67,17 +67,18 @@ describe('microjs generator', function () {
         'test/karma.conf.js',
         'test/spec/' + projName + '.spec.js',
         '.editorconfig',
-        '.npmignore',
         '.gitattributes',
         '.gitignore',
         '.jshintrc',
+        '.npmignore',
+        '.travis.yml',
+        '.umd',
         'bower.json',
         'gulpfile.js',
         'package.json',
         'README.md',
         projName + '.js',
-        projName + '.min.js',
-        projName + '.min.js.map'
+        projName + '.min.js'
       ];
 
       // the unexpected files should not exist
@@ -162,7 +163,7 @@ describe('microjs generator', function () {
         var expectedContent = [
           checkContents(file, 'source = \'' + projName + '.js\''),
           checkContents(file, 'sourceMin = \'' + projName + '.min.js\''),
-          checkContents(file, 'gulp.src\\(sourceAndSpecs'),
+          checkContents(file, 'gulp.src\\(\\[source, specs\\]'),
           checkContents(file, 'pipe\\(rename\\(sourceMin')
         ];
 
@@ -281,28 +282,6 @@ describe('microjs generator', function () {
         });
       });
     });
-
-    describe(projName + '.min.js.map', function () {
-      var file = projName + '.min.js.map';
-
-      it('should contain the correct contents', function (done) {
-
-        // the file should have the expected content
-        var expectedContent = [
-          checkContents(file, '// Run "gulp" to generate this file')
-        ];
-
-        // run the generator
-        this.app.run({}, function () {
-
-          // check for expected file contents
-          helpers.assertFileContent(expectedContent);
-
-          done();
-        });
-      });
-    });
-
   });
 
   describe('when taskFramework is grunt', function () {

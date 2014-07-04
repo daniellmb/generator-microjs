@@ -1,5 +1,8 @@
 ###*
-@file <%= projName %> was created using generator-microjs.
-Generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> v<%= pkg.version %>
-@author <%= realname %> <<%= email %>>
+  @file <%= projName %> was created using generator-microjs.
+  Scaffolded with <%= pkg.name %> v<%= pkg.version %>
+  @author <%= realname %> <<%= email %>>
 ###
+
+<%= exportName %> = ->
+  # TODO: implement your micro framework or library.

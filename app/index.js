@@ -34,6 +34,12 @@ var extractProj = function (_, appname) {
   return slugged;
 };
 
+var toCamelCase = function (input) {
+  return input.toLowerCase().replace(/-(.)/g, function (match, group1) {
+    return group1.toUpperCase();
+  });
+};
+
 var githubUserInfo = function (name, cb) {
 
   // handle bad data
@@ -132,6 +138,7 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
 
       this.projName = props.projName;
       this.baseFileName = path.basename(this.projName, path.extname(this.projName));
+      this.exportName = toCamelCase(this.baseFileName);
 
       done();
     }.bind(this));
@@ -236,6 +243,7 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
   projectFiles: function () {
     this.copy('editorconfig', '.editorconfig');
     this.copy('npmignore', '.npmignore');
+    this.template('umd', '.umd');
 
     // only copy over coffee if the option was set
     if (this.options.coffee) {
@@ -243,7 +251,6 @@ var MicroJSGenerator = yeoman.generators.Base.extend({
     }
     this.template('micro-tmpl.js', this.baseFileName + '.js');
     this.template('micro-tmpl.min.js', this.baseFileName + '.min.js');
-    this.template('micro-tmpl.min.js', this.baseFileName + '.min.js.map');
     this.template('README.md', 'README.md');
   },
 
