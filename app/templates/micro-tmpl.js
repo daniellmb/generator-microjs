@@ -1,5 +1,5 @@
 /**
- * @file <%= projName %> was created using generator-microjs.
+ * @file <%= projName %> is micro-library.
  * Scaffolded with <%= pkg.name %> v<%= pkg.version %>
  * @author <%= realname %> <<%= email %>>
  */

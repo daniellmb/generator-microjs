@@ -2,7 +2,16 @@
   "name": "<%= projName %>",
   "version": "0.0.1",
   "ignore": [
-
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".jshintrc",
+    ".npmignore",
+    ".travis.yml",
+    ".umd",
+    "gulpfile.js",
+    "npm-shrinkwrap.json",
+    "package.json"
   ],
   "dependencies": {
 
