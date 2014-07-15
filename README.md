@@ -110,7 +110,16 @@ Use the following command to update to the latest version of generator-microjs.
 $ npm update -g generator-microjs
 ```
 
-## Testing
+## Contributing
+
+Pull requests welcome :)
+
+### TODO List
+
+  * add option for sass / css
+  * add option for creating a demo page
+
+### Testing
 
 Unit tests for this generator are written in [Mocha](http://visionmedia.github.io/mocha) and can be run using `npm test`.
 
