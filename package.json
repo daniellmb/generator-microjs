@@ -1,6 +1,6 @@
 {
   "name": "generator-microjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scaffold out a micro library or framework using yeoman.",
   "license": "MIT",
   "repository": "daniellmb/generator-microjs",
@@ -10,7 +10,7 @@
     "url": "https://github.com/daniellmb"
   },
   "bugs": {
-    "url": "https://github.com/daniellmb/generator-microlib/issues"
+    "url": "https://github.com/daniellmb/generator-microjs/issues"
   },
   "licenses": [
     {
