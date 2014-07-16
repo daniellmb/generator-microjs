@@ -1,6 +1,7 @@
 {
   "name": "<%= projName %>",
   "version": "0.1.0",
+  "main": "<%= baseFileName %>.js",
   "ignore": [
     ".editorconfig",
     ".gitattributes",

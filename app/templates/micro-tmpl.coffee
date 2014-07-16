@@ -1,6 +1,6 @@
 ###*
   @file <%= projName %> is micro-library.
-  Scaffolded with <%= pkg.name %> v<%= pkg.version %>
+  Scaffolded with <%= pkg.name %>
   @author <%= realname %> <<%= email %>>
 ###
 

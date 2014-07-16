@@ -84,7 +84,7 @@ Step-by-step for creating a new micro-lib. A LOT will be done for you, but there
     1. enable any build status notifications you want published.
     1. enable publishing test coverage to code climate.
   1. Writing unit tests for your code.
-  1. Implementing your micro library or framework.
+  1. Implement your micro library or framework.
   1. Activate the repository in [Travis](https://travis-ci.org).
   1. Push you *initial commit* to GitHub.
   1. Activate the repository on [CodeClimate](https://codeclimate.com).
