@@ -20,7 +20,7 @@ Quickly scaffold out a micro library or framework.
     * [Grunt](http://gruntjs.com)
   * Choose your preferred unit test framework.
     * [Jasmine](http://jasmine.github.io)
-    * [Mocha](http://visionmedia.github.io/mocha)
+    * [Mocha](http://mochajs.org/)
     * [QUnit](http://qunitjs.com) (TODO)
   * Test coverage pre-configured to publish to code climate.
   * Micro library template is pre-configured for AMD, Node.js and browser support.
@@ -121,7 +121,7 @@ Pull requests welcome :)
 
 ### Testing
 
-Unit tests for this generator are written in [Mocha](http://visionmedia.github.io/mocha) and can be run using `npm test`.
+Unit tests for this generator are written in [Mocha](http://mochajs.org/) and can be run using `npm test`.
 
 ## License
 
